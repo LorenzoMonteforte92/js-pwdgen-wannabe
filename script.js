@@ -11,15 +11,22 @@ const userSurname = prompt('Perfetto, qual è il tuo cognome invece? ')
 console.log(userSurname)
 
 // chiedere all'utente il colore preferito
-const userFavouriteColor = prompt('Ottimo ora ultima domanda, colore preferito? ')
+const userFavouriteColor = prompt('Ottimo, colore preferito? ')
 console.log(userFavouriteColor)
 
-//user number
-const userNumber = '23'
+// chiedere all'utente iun numero
+const userNumber = prompt('Ottimo, ora ultima domanda scegli un numero? ')
+const userNumberAsNumeric = parseInt(userNumber)
+
+//default number
+const defaultNumber = 23
 console.log(userNumber)
 
+// calcolare numero
+const finalNumber = defaultNumber + userNumberAsNumeric
+
 // generare una password
-const password = userName + userSurname + userFavouriteColor + userNumber
+const password = userName + userSurname + userFavouriteColor + finalNumber
 console.log(password)
 
 // generare un messaggio
